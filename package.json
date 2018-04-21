@@ -1,0 +1,13 @@
+{
+  "name": "node-test",
+  "description": "A simple application to show how to use environment variables.",
+  "author": {
+    "name": "Mohsen Kamrani"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
