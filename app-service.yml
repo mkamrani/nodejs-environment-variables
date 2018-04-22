@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name:  sample-node-env-vars
+spec:
+  selector:
+    app:  node-app
+  type:  LoadBalancer
+  ports:
+  - port:  80
+    targetPort:  node-app-port
+    protocol: TCP

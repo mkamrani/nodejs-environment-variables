@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-node-env-vars
+  labels:
+    app: node-app
+spec:
+  containers:
+    - image:  kamrani/sample-node-env-vars
+      name:  node-env-vars-cont
+      env:
+        - name:  POD_ENV_VAR
+          value:  "Set_In_Pod"
+      ports:
+      - name: node-app-port
+        containerPort: 3000
